@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import blog.dao.UserDao;
 import blog.entity.User;
+import blog.util.Md5Encrypt;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:beans.xml")
@@ -22,10 +23,11 @@ public class UserDaoTest {
 	@Test
 	public void addUser() throws Exception{
 		User user = new User();
-		user.setUsername("qweqwe");
+		user.setUsername("zzz");
 		user.setEmail("123@qq.com");
-		user.setPassword("123456");
-		user.setNickname("nihao");
+		user.setPassword(Md5Encrypt.getMD5("123"));
+		user.setNickname("pandagege");
+		user.setProfile("${pageContext.request.contextPath}/images/head/aaa.jpg");
 		//User u = new User("ronething","123456","axing","178965100@qq.com","这是一个个性签名","images/touxiang",1);
 		Integer res = userDao.addUser(user);
 		System.out.println(res);

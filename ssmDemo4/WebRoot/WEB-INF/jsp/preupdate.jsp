@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'userinfo.jsp' starting page</title>
+    <title>My JSP 'updateinfo.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -19,31 +19,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
   </head>
-  
   <body>
-  <p>${param.message}</p>
-        <table border=1>
+  <form action="user/updateinfo" method="post">
+    <table>
     	<tr>
-    	  <td>编号</td>
-    	  <td>用户名</td>
     	  <td>昵称</td>
     	  <td>邮箱</td>
     	  <td>个性签名</td>
-    	  <td>头像</td>
     	</tr>
     	  <tr>
-    	  	<td>${sessionScope.user.id}</td>
-    	  	<td>${sessionScope.user.username}</td>
-    	  	<td>${sessionScope.user.nickname}</td>
-    	  	<td>${sessionScope.user.email}</td>
-    	  	<td>${sessionScope.user.signature}</td>
-    	  	<td><img src="${pageContext.request.contextPath}${sessionScope.user.profile}"></td>
+    	  	<td><input type="text" name="nickname" value="${sessionScope.user.nickname}"></td>
+    	  	<td><input type="text" name="email" value="${sessionScope.user.email}"></td>
+    	  	<td><input type="text" name="signature" value="${sessionScope.user.signature}"></td>
     	  </tr>
     </table>
-    
-    <a href="user/preupdateinfo">修改信息</a>
-    <a href="user/prechangepw">修改密碼</a>
+    <input type="submit" value="修改" />
+    </form>
   </body>
 </html>

@@ -3,6 +3,7 @@ package blog.util;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 
+import org.apache.log4j.chainsaw.Main;
 import org.springframework.util.DigestUtils;
 
 import com.sun.mail.smtp.DigestMD5;
@@ -30,5 +31,9 @@ public class Md5Encrypt {
           return null;
        }
    }
+   
+   public static void main(String[] args) {
+	System.out.println(Md5Encrypt.getMD5("111"));
+}
 
 }
