@@ -52,7 +52,6 @@ public class UserDaoTest {
 //		User user = userDao.findById(3);
 //		System.out.println(user);
 //	}
-	
 //	@Test
 //	public void listUser() throws Exception{
 //		List<User> users = userDao.listUser();
@@ -60,7 +59,6 @@ public class UserDaoTest {
 //			System.out.println(user);
 //		}
 //	}
-	
 //	@Test
 //	public void fingByUserLogin() throws Exception{
 //		User user = userDao.fingByUserLogin("demo");
