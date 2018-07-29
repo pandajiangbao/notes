@@ -11,7 +11,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import blog.dao.UserDao;
 import blog.entity.User;
+<<<<<<< HEAD
 import blog.util.Md5Encrypt;
+=======
+>>>>>>> upstream/master
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:beans.xml")
@@ -20,6 +23,7 @@ public class UserDaoTest {
 	@Resource
 	private UserDao userDao;
 	
+<<<<<<< HEAD
 	@Test
 	public void addUser() throws Exception{
 		User user = new User();
@@ -32,6 +36,14 @@ public class UserDaoTest {
 		Integer res = userDao.addUser(user);
 		System.out.println(res);
 	}
+=======
+//	@Test
+//	public void addUser() throws Exception{
+//		User u = new User("ronething","123456","axing","178965100@qq.com","ÕâÊÇÒ»¸ö¸öÐÔÇ©Ãû","images/touxiang",1);
+//		Integer res = userDao.addUser(u);
+//		System.out.println(res);
+//	}
+>>>>>>> upstream/master
 	
 //	@Test
 //	public void updateUser() throws Exception{
@@ -40,8 +52,13 @@ public class UserDaoTest {
 //		user.setUsername("demo");
 //		user.setPassword("12345678");
 //		user.setEmail("axingfly@gmail.com");
+<<<<<<< HEAD
 //		user.setSignature("è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•");
 //		user.setProfile("è¿™æ˜¯ä¸€ä¸ªprofile");
+=======
+//		user.setSignature("ÕâÊÇÒ»¸ö²âÊÔ");
+//		user.setProfile("ÕâÊÇÒ»¸öprofile");
+>>>>>>> upstream/master
 //		user.setRole(0);
 //		int res = userDao.updateUser(user);
 //		System.out.println(res);
@@ -52,6 +69,7 @@ public class UserDaoTest {
 //		User user = userDao.findById(3);
 //		System.out.println(user);
 //	}
+<<<<<<< HEAD
 //	@Test
 //	public void listUser() throws Exception{
 //		List<User> users = userDao.listUser();
@@ -64,4 +82,14 @@ public class UserDaoTest {
 //		User user = userDao.fingByUserLogin("demo");
 //		System.out.println(user.getPassword());
 //	}
+=======
+	
+	@Test
+	public void listUser() throws Exception{
+		List<User> users = userDao.listUser();
+		for (User user : users) {
+			System.out.println(user);
+		}
+	}
+>>>>>>> upstream/master
 }

@@ -36,7 +36,11 @@ public class StarDaoTest {
 //	public void findBySubscriber() throws Exception{
 //		List<Star> stars = starDao.findBySubscriber(2);
 //		for (Star star : stars) {
+<<<<<<< HEAD
 //			System.out.println("ç”¨æˆ· 2 å…³æ³¨çš„äººæ˜¯ "+star.getSubscribee());
+=======
+//			System.out.println("ÓÃ»§ 2 ¹Ø×¢µÄÈËÊÇ "+star.getSubscribee());
+>>>>>>> upstream/master
 //		}
 //	}
 	
@@ -44,20 +48,32 @@ public class StarDaoTest {
 //	public void findBySubscribee() throws Exception{
 //		List<Star> stars = starDao.findBySubscribee(2);
 //		for (Star star : stars) {
+<<<<<<< HEAD
 //			System.out.println("ç”¨æˆ· 2 çš„ç²‰ä¸æ˜¯ "+star.getSubscriber());
+=======
+//			System.out.println("ÓÃ»§ 2 µÄ·ÛË¿ÊÇ "+star.getSubscriber());
+>>>>>>> upstream/master
 //		}
 //	}
 	
 //	@Test
 //	public void getTotalSubscriber() throws Exception{
 //		Long res = starDao.getTotalSubscriber(2);
+<<<<<<< HEAD
 //		System.out.println("ç”¨æˆ·2å…³æ³¨çš„æ€»äººæ•°"+res);
+=======
+//		System.out.println("ÓÃ»§2¹Ø×¢µÄ×ÜÈËÊý"+res);
+>>>>>>> upstream/master
 //	}
 //	
 //	@Test
 //	public void getTotalSubscribee() throws Exception{
 //		Long res = starDao.getTotalSubscribee(4);
+<<<<<<< HEAD
 //		System.out.println("ç”¨æˆ·4ç²‰ä¸æ€»äººæ•°"+res);
+=======
+//		System.out.println("ÓÃ»§4·ÛË¿×ÜÈËÊý"+res);
+>>>>>>> upstream/master
 //	}
 	
 }

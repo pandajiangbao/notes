@@ -35,11 +35,18 @@ public interface UserDao {
 	public Integer updateUser(User user);
 	
 	/**
+<<<<<<< HEAD
 	 * åˆ—å‡ºæ‰€æœ‰ç”¨æˆ·
 	 * @return
 	 */
 	public List<User> listUser();
 	
 	public User fingByUserLogin(String username);
+=======
+	 * ÁĞ³öËùÓĞÓÃ»§
+	 * @return
+	 */
+	public List<User> listUser();
+>>>>>>> upstream/master
 
 }

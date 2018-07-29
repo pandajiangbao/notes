@@ -45,21 +45,33 @@ public interface CommentDao {
 	public List<Comment> listByArticleId(Integer articleid);
 	
 	/**
+<<<<<<< HEAD
 	 * æŸä¸ªäººçš„æ‰€æœ‰è¯„è®º
+=======
+	 * Ä³¸öÈËµÄËùÓÐÆÀÂÛ
+>>>>>>> upstream/master
 	 * @param userid
 	 * @return
 	 */
 	public List<Comment> listByUserId(Integer userid);
 	
 	/**
+<<<<<<< HEAD
 	 * èŽ·å–æŸç¯‡æ–‡ç« çš„è¯„è®ºæ€»æ•°
+=======
+	 * »ñÈ¡Ä³ÆªÎÄÕÂµÄÆÀÂÛ×ÜÊý
+>>>>>>> upstream/master
 	 * @param articleid
 	 * @return
 	 */
 	public Long getTotalByArticleId(Integer articleid);
 	
 	/**
+<<<<<<< HEAD
 	 * èŽ·å–æŸç”¨æˆ·è¯„è®ºçš„æ€»æ•°
+=======
+	 * »ñÈ¡Ä³ÓÃ»§ÆÀÂÛµÄ×ÜÊý
+>>>>>>> upstream/master
 	 * @param userid
 	 * @return
 	 */
